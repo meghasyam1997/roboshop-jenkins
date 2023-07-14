@@ -1,0 +1,3 @@
+single_job:
+  - {git_repo_url: https://github.com/meghasyam1997/roboshop-jenkins.git, job_name: roboshop-jenkins}
+  - {git_repo_url: https://github.com/meghasyam1997/roboshop-ansible.git, job_name: roboshop-ansible}

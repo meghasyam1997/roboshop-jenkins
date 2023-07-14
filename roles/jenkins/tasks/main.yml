@@ -1,0 +1,4 @@
+- name: Include task list in play
+  ansible.builtin.import_tasks:
+    file: single_job.yml
+  loop: "{{single_job}}"
