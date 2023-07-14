@@ -1,5 +1,5 @@
 - name: Replacing the xml File
-  ansible.builtin.templates:
+  ansible.builtin.template:
     src: single_job_config.xml
     dest: /tmp/test.xml
 
