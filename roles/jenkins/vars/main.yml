@@ -1,3 +1,11 @@
 single_jobs:
-  - {git_repo_url: https://github.com/meghasyam1997/roboshop-terraform-practice.git, job_name: roboshop-terraform}
-  - {git_repo_url: https://github.com/meghasyam1997/roboshop-ansible.git, job_name: roboshop-ansible}
+  - {git_repo_url: https://github.com/meghasyam1997/roboshop-terraform-practice.git, job_name: roboshop-terraform-auto}
+  - {git_repo_url: https://github.com/meghasyam1997/roboshop-ansible.git, job_name: roboshop-ansible-auto}
+
+multi_jobs:
+  - {git_repo_url: https://github.com/meghasyam1997/cart.git, job_name: cart}
+#  - {git_repo_url: https://github.com/meghasyam1997/catalogue.git, job_name: catalogue}
+#  - {git_repo_url: https://github.com/meghasyam1997/user.git, job_name: user}
+#  - {git_repo_url: https://github.com/meghasyam1997/shipping.git, job_name: shipping}
+#  - {git_repo_url: https://github.com/meghasyam1997/payment.git, job_name: payment}
+#  - {git_repo_url: https://github.com/meghasyam1997/frontend.git, job_name: frontend}
