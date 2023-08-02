@@ -1,32 +1,38 @@
 def call(){
-    pipeline{
-        agent{
-            node{
+    pipeline {
+        agent {
+            node {
                 label 'workstation'
             }
         }
 
-        options{
-            ansiColor('xterm') {
-            }
+        options {
+            ansiColor('xterm')
         }
 
-        stages{
-
-            stage('CODE QUALITY'){
-                sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.80.205:9000'
+        stages {
+            stage('CODE QUALITY') {
+                steps {
+                    sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.80.205:9000'
+                }
             }
 
-            stage('UNIT TEST CASES'){
-                sh 'echo Unit Test Cases'
+            stage('UNIT TEST CASES') {
+                steps {
+                    sh 'echo Unit Test Cases'
+                }
             }
 
-            stage('SAST'){
-                sh 'echo SAST'
+            stage('SAST') {
+                steps {
+                    sh 'echo SAST'
+                }
             }
 
-            stage('SCA'){
-                sh 'echo SCA'
+            stage('SCA') {
+                steps {
+                    sh 'echo SCA'
+                }
             }
         }
 
