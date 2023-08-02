@@ -13,11 +13,11 @@ def call(){
 
         stages{
 
-            stage('Code Quality'){
-                sh 'echo code Quality'
+            stage('CODE QUALITY'){
+                sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.80.205:9000'
             }
 
-            stage('Unit Test Cases'){
+            stage('UNIT TEST CASES'){
                 sh 'echo Unit Test Cases'
             }
 
